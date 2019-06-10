@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gris_claro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/karlabold"
+        android:gravity="center"
+        android:padding="8sp"
+        android:paddingTop="3sp"
+        android:paddingBottom="3sp"
+        android:text="Bienvenido a Bilder!"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/imgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"
+        android:paddingLeft="45sp"
+        android:paddingTop="21dp"
+        android:paddingRight="30sp"
+        android:paddingBottom="20sp"
+        app:srcCompat="@drawable/microphone32" />
+
+    <ImageButton
+        android:id="@+id/imgButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"
+        android:paddingLeft="35sp"
+        android:paddingTop="20dp"
+        android:paddingRight="45sp"
+        android:paddingBottom="20dp"
+        app:srcCompat="@drawable/report32" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/imgButton2"
+        android:layout_alignLeft="@id/imgButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-98dp"
+        android:layout_marginLeft="-98dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:onClick="getSpeechInput"
+        android:paddingLeft="50sp"
+        android:paddingTop="20dp"
+        android:paddingRight="35sp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/chronometer32" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:paddingLeft="50sp"
+        android:paddingTop="20dp"
+        android:paddingRight="30sp"
+        android:paddingBottom="20dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:src="@drawable/hand32" />
+
+    <TextView
+        android:id="@+id/como"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/karla"
+        android:gravity="center"
+        android:text="¿Cómo funciona?"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/como"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/karla"
+        android:gravity="center"
+        android:paddingBottom="30sp"
+        android:text="Si tenés que tomar notas en una clase, Bilder lo hace por vos. Simplemente acercá el micrófono al profesor y dejalo grabar. Después de recibir el audio, Bilder lo convierte en texto y lo resume."
+        android:textColor="@android:color/background_dark"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/buttonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvResult"
+        android:layout_marginLeft="55sp"
+        android:fontFamily="@font/karla"
+        android:paddingTop="30sp"
+        android:paddingBottom="5sp"
+        android:text="¿Querés resumir un archivo ya existente?"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonText"
+        android:layout_marginLeft="50sp"
+        android:layout_marginBottom="20sp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="@font/karla"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="8dp"
+        android:text="Resumir documento"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="28sp" />
+</RelativeLayout>

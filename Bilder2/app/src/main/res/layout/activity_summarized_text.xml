@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/SumLayout"
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Resumen"
+        android:fontFamily="@font/karlabold"
+        android:gravity="center"/>
+
+    <EditText
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:gravity="start"
+        android:id="@+id/sumContent"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:layout_width="318dp"
+        android:layout_height="411dp"
+        android:layout_centerInParent="true"
+        android:textIsSelectable="true"
+        android:textAlignment="textStart"
+        app:fontFamily="@font/karla"/>
+
+    <Button
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/editSaveSumButton"
+        android:background="#ff8800"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar y abrir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:fontFamily="@font/karlabold"
+        android:gravity="center"/>
+</RelativeLayout>
+

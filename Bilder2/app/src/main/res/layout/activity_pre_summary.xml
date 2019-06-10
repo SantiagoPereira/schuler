@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/preSumLayout"
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Tu archivo"
+        android:fontFamily="@font/karlabold"
+        android:gravity="center"/>
+
+    <EditText
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:gravity="start"
+        android:id="@+id/preSumContent"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:layout_width="318dp"
+        android:layout_height="411dp"
+        android:layout_centerInParent="true"
+        android:textIsSelectable="true"
+        android:textAlignment="textStart"
+        app:fontFamily="@font/karla"/>
+
+    <Button
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/preSumButton"
+        android:background="#ff8800"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:fontFamily="@font/karlabold"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/preSumCard"
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="15dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Bilder"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/karlabold"
+            android:gravity="center"/>
+
+        <TextView
+            android:textSize="22sp"
+            android:textColor="@android:color/background_dark"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Cuando toques en 'Resumir', el archivo se resumirá. Asegurate de que el texto esté bien puntuado y que no tenga faltas de ortografía. Acá abajo agregá el porcentaje del texto original que querés conservar."
+            android:layout_centerInParent="true"
+            android:textIsSelectable="true"
+            android:fontFamily="@font/karla"
+            android:gravity="center"/>
+
+        <Button
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/modalPreSumButton"
+            android:background="#ff8800"
+            android:paddingBottom="3.5dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="300dp"
+            android:layout_height="wrap_content"
+            android:text="Resumir"
+            android:textAllCaps="false"
+            android:fontFamily="@font/karlabold"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/karlabold"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="145sp"
+            android:inputType="number" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
